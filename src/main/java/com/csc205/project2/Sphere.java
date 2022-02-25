@@ -23,19 +23,21 @@ public class Sphere extends Shape{
     }
 
     public double surfaceArea() {
+        //surface area formula for sphere
         return 4.0 * Math.PI * Math.pow(radius, 2);
     }
 
     public double volume() {
+        //volume formula for sphere
         return (4.0/3.0) * Math.PI * Math.pow(radius, 3);
     }
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Sphere {");
-        sb.append("radius=").append(radius);
-        sb.append(", surface area=").append(surfaceArea());
-        sb.append(", volume=").append(volume());
+        final StringBuilder sb = new StringBuilder("Sphere: \n {");
+        sb.append("radius = ").append(radius);
+        sb.append(", surface area = ").append(surfaceArea());
+        sb.append(", volume = ").append(volume());
         sb.append('}');
         return sb.toString();
     }

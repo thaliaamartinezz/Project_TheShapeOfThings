@@ -13,40 +13,25 @@ public class Project2 {
 
     public static void main(String[] args) {
 
-        /*
-        The following code works with the example design given.
-         */
-
-        /*
-
-        */
+        //Creates Sphere
         ThreeDimensionalShape sphere = new Sphere(2.0);
+        //Prints name, volume, & surface area
         System.out.println(sphere);
 
+        //Creates Cube
         ThreeDimensionalShape cube = new Cube(5.0);
+        //Prints name, volume, & surface area
         System.out.println(cube);
 
+        //Creates Cylinder
         ThreeDimensionalShape cylinder = new Cylinder(1.0 ,4.0);
+        //Prints name, volume, & surface area
         System.out.println(cylinder);
 
+        //Creates Tetrahedron
         ThreeDimensionalShape tetrahedron = new Tetrahedron(5.0);
+        //Prints name, volume, & surface area
         System.out.println(tetrahedron);
-
-        /*/ We'll cover this stuff in module 4
-        List<ThreeDimensionalShape> shapes = new ArrayList<>();
-        shapes.add(sphere);
-        shapes.add(cube);
-        shapes.add(cylinder);
-
-        shapes.forEach(System.out::println);*/
-
-        /*
-        The following code works with the code given.
-         */
-
-        //Sphere sphere = new Sphere(2.0);
-        //System.out.println(sphere);
-
 
     }
 

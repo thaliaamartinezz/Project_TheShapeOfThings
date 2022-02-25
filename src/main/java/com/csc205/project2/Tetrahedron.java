@@ -22,19 +22,21 @@ public class Tetrahedron extends Shape {
     }
 
     public double surfaceArea() {
+        //surface area formula for tetrahedron
         return Math.sqrt(3.0) * Math.pow(edge, 2);
     }
 
     public double volume() {
+        //volume formula for tetrahedron
         return (Math.pow(edge, 3))/(6.0 * Math.sqrt(2.0));
     }
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Tetrahedron {");
-        sb.append("edge=").append(edge);
-        sb.append(", surface area=").append(surfaceArea());
-        sb.append(", volume=").append(volume());
+        final StringBuilder sb = new StringBuilder("Tetrahedron: \n {");
+        sb.append("edge = ").append(edge);
+        sb.append(", surface area = ").append(surfaceArea());
+        sb.append(", volume = ").append(volume());
         sb.append('}');
         return sb.toString();
     }

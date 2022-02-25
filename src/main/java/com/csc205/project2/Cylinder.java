@@ -32,20 +32,22 @@ public class Cylinder extends Shape{
     }
 
     public double surfaceArea() {
+        //surface area formula for cylinder
         return (2.0 * Math.PI * radius)*(height + radius); // radius * height) + (2.0 * Math.PI * Math.pow(radius, 2));
     }
 
     public double volume() {
+        //volume formula for cylinder
         return Math.PI * Math.pow(radius, 2) * height;
     }
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Cylinder {");
-        sb.append("radius=").append(radius);
-        sb.append("height=").append(height);
-        sb.append(", surface area=").append(surfaceArea());
-        sb.append(", volume=").append(volume());
+        final StringBuilder sb = new StringBuilder("Cylinder: \n{");
+        sb.append("radius = ").append(radius);
+        sb.append(", height = ").append(height);
+        sb.append(", surface area = ").append(surfaceArea());
+        sb.append(", volume = ").append(volume());
         sb.append('}');
         return sb.toString();
     }
